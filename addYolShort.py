@@ -10,9 +10,10 @@ for file in file_text:
     for info in data:
         tt_S += info[1:]
         a = tt_S.replace("\n","")
-    line = f"{file[6:-3]}.jpg {len(data)}{a}\n"
+    line = f"{file[6:-5]}.jpg {len(data)}{a}\n"
     with open('info.dat', 'a') as f:
              f.write(f"{line}")
+    print(f"{line}")
     i+=1
 
 print(i)
